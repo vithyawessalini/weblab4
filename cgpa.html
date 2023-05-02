@@ -1,0 +1,348 @@
+<html>
+	<head>
+	 <style>
+	* {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+	 font-family: sans-serif;
+   }
+   body {
+	 background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEhIVFRUXFRUXFxUVFRUXFRcVFRUXFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJ4BPwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAACAQADBAf/xAAhEAEBAQEBAAICAwEBAAAAAAAAAQIREgMhMWFBUYFx8P/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD4pC4igixFApV6CwFpZgQ+ApZc+H2ASdXiyAuDmQycBZSqcOQFxCmf8XOfr/3+OkyDn540jpYkkAblPLpNJn9g4bcuvTuOGsgKVcrQcx2doaoJ1NN0aCWNxm6CRqlQF4ydaUC6lFfQDwoPtOgbN1gXiSMUBOItrdBliyNIDRfJSL0FzDzExCsBuHxIWYBzK4jYjpKC5VpFnAXqWfZSNYDnakp1JkHP5I5aejccNg5yDSkGgA6OhsBo0hoNQ0fR0AqkrAvGiVJQWsUSwB4UjWpKDLELoNKotAarluFQWZbEaLKBSLPwPTBcx0gYpygp5gHmg6QpHOUsUHWFnjnIQF3+msGxcglrS/wuhgJqOW8u9rnuA8+g07bn8B5BxqU9fhP4BLAuWvyJaAyjutmJoAX0yA3VjZLILKur9JmxOgMS0q3QaNxovAbjMlgHClHN+hmgdZotVywfQXixuNwCy6xzzk4ByFlz9Lmg7SHA6voGtLNDhyA6dHNTVafoHRztK9HgNB06zLaoPN5o/Ttpy0DjY56d9OWoDjf+Jx08p5BxtaQ7E1kHOxHTynkB4sXy0gNVTyecQBsc667c/ILFQsgPC8lcrkGv4CZLpzUAZOFF8p5ArpJVsQDzspXGOuQMp+hhwFhpgpkGjpctjLrYDjJVdJlfIBPkKDqRL9A3v8pbaF1/ZWgGvtz1HTTj8ugG0a0TVBOB8lVz1fsEo1d0AWsjdBY3ElK6BowddAShw9Ofqg6JK3pAdZUuhhcBrUlLyIHNHK5w8AVHRWDJQZ0zAOaBeumaOY6YyDSFFq4naDr8MMOcS7A1ze/kfVXOoBaw56PWnPQOe599KT+0q+QFw+T9u3XL5Ac9OXp1289oLdud0yUFtSrmN5BrRL6bgJYMpWJcgJ/Fv+BXXOgXyOfD1RoNxYzWAs0soLKDraEIKB0455KgU0vakKAl0UC/8af4D0T9F6c8UuAfpca/YjKD035SzXDJTgOutfttVwn3Sn5+gdZ1tfhvQ73Aa/Jz8pfkc/cqX9AutOWqtrjvX0Cb05rW4AVFtXM+gKJUg0Gq9DVW0G6NqpwGlIYtv2C6+hmj1ewJAKNaUKyA5Kq/wDSjqmOgaVboWgOsXiYKg3V6FL2Drl0xr6ccaXWgdbobUmk6B+vpM3g+uBd/YO+a6Y0883XWXgH6ctylv5Amugmp9Dyug6oOfpztdKEyCpYf4EAsXi0dUGtGt1qAWMo0FlVMsDSLI0rQB42S1GBjgECcXrdjUGRm4CcLMRug6NipkwTTRKuaBZvD7A9NNAetJ74l059B0tShdFAdMuma5jnoLulgYcBdVy1T1pztAerKEizQOrnpfTlfkBbU6nppQVanBoNoSlSgjdbqdBYtosBWpVjaBlqQoDZaQpGAeNatg6oMnWy1App0zXF0xQLSemtCg6TS9gZLNBLUjWrgG665056yEoO/pJXK1pQejo1Pj10qCWhqlQ1ACIUn21yAVDG0EZep0HQbCzU2A8SlmtoA43FtGgdo5iLkFlWxk0D/2Q==');
+	 color:snow;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+   }
+   #course-row {
+	 font-size: 20px;
+	 font-weight: bolder; 
+	 margin-left: -2%;
+   }
+   #credit-row {
+	 font-size: 20px;
+	 font-weight: bolder;
+	 margin-left: 13%;
+   }
+   #grade-row {
+	 font-size: 20px;
+	 font-weight: bolder;
+	 margin-left: 8%;
+   }
+   .calculator-box {
+	 width: 75%;
+	 height: auto;
+	 /*  border: 3px solid grey; */
+	 margin: 100px auto;
+   /*  text-align: center; */
+   }
+   @media screen and (max-width: 1200px) {
+	.calculator-box {
+	   width: 70%;
+	 }
+   }
+   @media screen and (max-width: 950px) {
+	.calculator-box {
+	   width: 75%;
+	 }
+   }
+   @media screen and (max-width: 600px) {
+	.calculator-box {
+	   width: 90%;
+	 }
+   }
+   h1 {
+	 padding: 15px;
+	 font-size: 40px;
+	 text-align: center;
+	 border: 3px solid wheat;
+	 background-color:crimson;
+   }
+   img{
+	 padding: 20px;
+	 font-size: 1rem;
+	 color: black;
+	 text-align: center;
+   }
+	
+   #course-wrapper, form {
+	 color:snow;
+	 padding-left: 10px;
+	 margin: 0 auto;
+	 text-align: center;
+   }
+   input{
+	 border: none;
+	 padding: 15px;
+	 margin: 10px;
+	 border-radius: 5px;
+	 width: 20%;
+	 text-align: center;
+   }
+   select{
+	 padding: 15px;
+	 border: none;
+	 border-radius: 7.5px;
+	 width: 20%;
+   /*   height: 30px; */
+   }
+	button {
+	 width: 15%;
+	 height: 40px;
+	 padding: 1px;
+	 margin: 5px auto;
+   /*   margin-left: 10px; */
+	 border-width: 3px;
+	 border-radius: 10%;
+	 border-style: solid inset 2px black;
+   }
+	button:hover {
+	 width: 15%;
+	 height: 40px;
+	 padding: 1px;
+	 margin: 5px auto;
+	 border-width: 3px;
+	 border-radius: 10%;
+	 border-style: solid;
+	 color: #fff;
+	 background:crimson;
+	 border-color: #000;
+   }
+   .btn {
+	 width: 100%;
+	 padding: 10px;
+	 display: inline-block;
+	 margin: 0 auto;
+	 text-align: center;
+   }
+   .lastp {
+	 border: 1px solid black;
+	 background-color:crimson;
+	 width:50%;
+	 margin:auto;
+   }
+   .lastp p {
+	 color:snow;
+	 text-align: center;
+	 padding: 10px;
+	 font-size: 30px;
+	 font-weight: bolder;
+   } 
+	</style>
+   </head>
+	<body>    
+   
+	 <div class="calculator-box">
+	   <h1> <IMG SRC="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdEbhX-SDCKhM0sqjKlu3tsIBlnOR8ZlEDfg&usqp=CAU"style="width:20%;"><br>
+	   CGPA CALCULATOR</h1>
+		  <img src="https://imageio.forbes.com/blogs-images/serenitygibbons/files/2019/06/Screen-Shot-2019-06-19-at-12.44.31-PM.jpg?format=jpg&width=960"style=width:100%;height:80%>
+		   <div id="course-wrapper">
+			 <form class="key-0">
+			   <p> <label id="course-row" for="courses">Courses Name:</label> 
+				<label id="credit-row" for="credit-units">Credit:</label>
+			  <label id="grade-row" for="grade">Grades: </label></p>
+				 <input
+				   type="text"
+				   placeholder="Course Name"
+				   class="courses key-0"
+				   required/>
+				 <input
+				   type="number"
+				   class="credit-units key-0"
+				   placeholder="Credit"
+				   value=""min="1" max="4"
+				   required
+				 />
+				 <select class="grade key-0" required>
+				   <option class="grade" value="select">Select</option>
+				   <option class="grade" value="10">O</option>
+				   <option class="grade" value="9">A+</option>
+				   <option class="grade" value="8">A</option>
+				   <option class="grade" value="7">B+</option>
+				   <option class="grade" value="6">B</option>
+				   <option class="grade" value="5">C</option>
+				   <option class="grade" value="0">RA</option>
+				 </select><br>
+				 <input
+				 type="text"
+				 placeholder="Course Name"
+				 class="courses key-0"
+				 required/>
+			   <input
+				 type="number"
+				 class="credit-units key-0"
+				 placeholder="Credit"
+				 value=""min="1" max="4"
+				 required
+			   />
+			   <select class="grade key-0" required>
+				 <option class="grade" value="select">Select</option>
+				 <option class="grade" value="10">O</option>
+				 <option class="grade" value="9">A+</option>
+				 <option class="grade" value="8">A</option>
+				 <option class="grade" value="7">B+</option>
+				 <option class="grade" value="6">B</option>
+				 <option class="grade" value="5">C</option>
+				 <option class="grade" value="0">RA</option>
+			   </select><br>
+			   <input
+			   type="text"
+			   placeholder="Course Name"
+			   class="courses key-0"
+			   required/>
+			 <input
+			   type="number"
+			   class="credit-units key-0"
+			   placeholder="Credit"
+			   value=""min="1" max="4"
+			   required
+			 />
+			 <select class="grade key-0" required>
+			   <option class="grade" value="select">Select</option>
+			   <option class="grade" value="10">O</option>
+			   <option class="grade" value="9">A+</option>
+			   <option class="grade" value="8">A</option>
+			   <option class="grade" value="7">B+</option>
+			   <option class="grade" value="6">B</option>
+			   <option class="grade" value="5">C</option>
+			   <option class="grade" value="0">RA</option>
+			 </select><br>
+			 <input
+			 type="text"
+			 placeholder="Course Name"
+			 class="courses key-0"
+			 required/>
+		   <input
+			 type="number"
+			 class="credit-units key-0"
+			 placeholder="Credit"
+			 value=""min="1" max="4"
+			 required
+		   />
+		   <select class="grade key-0" required>
+			 <option class="grade" value="select">Select</option>
+			 <option class="grade" value="10">O</option>
+			 <option class="grade" value="9">A+</option>
+			 <option class="grade" value="8">A</option>
+			 <option class="grade" value="7">B+</option>
+			 <option class="grade" value="6">B</option>
+			 <option class="grade" value="5">C</option>
+			 <option class="grade" value="0">RA</option>
+		   </select><br>
+		   <input
+		   type="text"
+		   placeholder="Course Name"
+		   class="courses key-0"
+		   required/>
+		 <input
+		   type="number"
+		   class="credit-units key-0"
+		   placeholder="Credit"
+		   value=""min="1" max="4"
+		   required
+		 />
+		 <select class="grade key-0" required>
+		   <option class="grade" value="select">Select</option>
+		   <option class="grade" value="10">O</option>
+		   <option class="grade" value="9">A+</option>
+		   <option class="grade" value="8">A</option>
+		   <option class="grade" value="7">B+</option>
+		   <option class="grade" value="6">B</option>
+		   <option class="grade" value="5">C</option>
+		   <option class="grade" value="0">RA</option>
+		 </select>
+			 </form>
+		   </div>
+		   <div class="btn">
+			 <button onclick="addCourse()" style="width:40px;">+</button>
+			 <button onclick="removeCourse()"style="width:40px;">-</button>
+			 <button onclick="calcCgpa()"style="width:100px;">CALCULATE</button>
+		   </div>
+		   <div class="lastp">
+			 <p id="cgpa-calc">Your CGPA is:</p>
+		   </div>
+		 </div>
+   <script>
+   function gradeCalc(grade, unit) {
+	 if (grade === "O") {
+	   return 10 * unit;
+	 } else if (grade === "A+") {
+	   return 9 * unit;
+	 } else if (grade === "A") {
+	   return 8 * unit;
+	 } else if (grade === "B+") {
+	   return 7 * unit;
+	 } else if (grade === "B") {
+	   return 6 * unit;
+	 } else if (grade === "C") {
+	   return 5 * unit;
+	 } else if (grade === "RA") {
+	   return 0 * unit;
+	 }
+   }
+   let counter = 1;
+   function addCourse() {
+	 let addNew = document.createElement("form");
+	 addNew.classList.add("add_new", `key-${counter}`);
+	 const course_name = `
+	 <form class="add_new key-${counter}">
+	   <input type="text" placeholder="Course Name" class="courses key-${counter}" required>
+		   <input type="number" placeholder="Credit" class="credit-units key-${counter}" required>
+		   <select class="grade key-${counter}" required>
+				   <option  value="select">Select</option>
+				   <option  value="10">O</option>
+				   <option  value="9">A+</option>
+				   <option  value="8">A</option>
+				   <option  value="7">B+</option>
+				   <option  value="6">B</option>
+				   <option  value="5">C</option>
+				   <option  value="0">RA</option>
+				 </select> 
+	 </form>
+	 `;
+	 addNew.innerHTML = course_name;
+	 document.getElementById("course-wrapper").appendChild(addNew);
+	 counter++;
+   }
+   function removeCourse() {
+	 let mainForm = document.querySelector("form.add_new");
+	 mainForm.remove();
+   }
+   const reports = [];
+   function calcCgpa() {
+	 const CGPAPARAGRAPH = document.getElementById("cgpa-calc");
+	 const image=document.getElementById("cgpa-calc");
+	 const GRADESSELECT = document.querySelectorAll("select.grade");
+	 const UNIT = document.querySelectorAll("input.credit-units");
+	 const courseReport = {};
+	 const listOfGrades = [];
+	 const listOfUnits = [];
+	 let totalUnits = 0;
+	 GRADESSELECT.forEach((e) => {
+	   let GRADES = e.options;
+	   const selectedIndex = e.selectedIndex;
+	   const selectedGrade = GRADES[selectedIndex];
+	   const gradeValue = selectedGrade.text.toUpperCase();
+	   listOfGrades.push(gradeValue);
+	 });
+	 console.log(listOfGrades);
+	 UNIT.forEach((e) => {
+	   const unitValue = parseInt(e.value);
+	   totalUnits += unitValue;
+	   listOfUnits.push(unitValue);
+	 });
+	 console.log(listOfUnits);
+	 let totalEarnedUnits = 0;
+	 for (let i = 0; i < listOfUnits.length; i++) {
+	   totalEarnedUnits += gradeCalc(listOfGrades[i], listOfUnits[i]);
+	 }
+	 const gpa = totalEarnedUnits / totalUnits;
+	 if (gpa >= 0){
+	   CGPAPARAGRAPH.textContent = "Your CGPA is " + gpa.toFixed(2);
+	 } else {
+	   CGPAPARAGRAPH.textContent = "Please enter your correct grade and credit units";    
+	 }
+   }
+   </script>
+   </body>
+   </html>
+   

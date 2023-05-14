@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+    <style>
+      .go{
+  background-image:url('http://camphighland.com/wp-content/uploads/2018/05/blog-posts-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 8px;
+    margin: 24px;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    }
+   
+    .card img {
+        height:250px;
+        width:250px;
+    }
+   
+    .title {
+    padding-top: 16px;
+    }
+
+    .container {
+padding: 2px 16px;
+    }
+    </style>
+</head>
+<body>
+  <div class="go"><br><br>
+    <center><H1>CAMP STORE</H1></center>
+    <br><br>
+    
+    &nbsp;&nbsp;CMP NO&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text" name="cmp" placeholder="21CMP001"pattern=[2]{1}[1]{1}[C]{1}[M]{1}[P]{1}[0-9]{3} required/><BR><BR>
+      &nbsp;&nbsp;  ID&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text" name="cmp" placeholder="enter your id "required/><BR><BR>
+    </div><br>
+    
+        <div class="row">
+          <div class="col-lg bg-white">
+            <div class="card">
+            <img src="V:\vithya\campstore\black.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="ART" >
+            <div class="container">
+                <h5>&emsp;&emsp;&emsp;SHIRT 1</h5>
+                <h6>Price:Rs-<s>430</s><br><br>Discount price:Rs-250 </h6>            
+                Quantity: <input type="number" id="quantity1" name="quantity1" min="1" max="5">
+                <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
+    
+          </div></div></div>
+          <div class="col-lg bg-white">
+            <div class="card">
+            <img src="V:\vithya\campstore\s2.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal1"alt="ART" >
+            <div class="container"><h5>&emsp;&emsp;&emsp;SHIRT 3</h5>
+            <h6>Price:Rs-<s>200</s> <br><br>
+              Discount price:Rs-150<br><br>
+                Quantity: <input type="number" id="quantity2" name="quantity2" min="1" max="5">
+          </div></div></div>
+          <div class="col-lg bg-white"style="padding: 0">
+            <div class="card">
+            <img src="V:\vithya\campstore\s3.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal2"alt="ART" >
+            <div class="container"><h5>&emsp;&emsp;&emsp;SHIRT 4</h5>
+            <h6>Price:Rs-<s>600</s> <br><br>
+              Discount price:Rs-500<br><br>
+                Quantity: <input type="number" id="quantity3" name="quantity3" min="1" max="5">
+          </div></div></div>
+          <div class="col-lg bg-white"><div class="card">
+            <img src="V:\vithya\campstore\s5.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal3"alt="ART" >
+            <div class="container"><h5>&emsp;&emsp;&emsp;SHIRT 5</h5>
+            <h6>Price:Rs-<s>450</s> <br><br>
+              Discount price:Rs-375<br><br>
+                Quantity: <input type="number" id="quantity4" name="quantity4" min="1" max="5">
+          </div></div></div></div><br><br><br><br>
+    
+        <div class="row">
+          <div class="col-lg bg-white"><div class="card">
+            <img src="V:\vithya\campstore\bg1.png"class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal4" alt="ART" >
+            <div class="container"><h5>&emsp;&emsp;&emsp;Bag 1</h5>
+            <h6>Price:Rs-<s>700</s> <br><br>
+              Discount price:Rs-500<br><br>
+            Quantity: <input type="number" id="quantity5" name="quantity5" min="1" max="5">
+          </div></div></div>
+          <div class="col-lg bg-white"><div class="card">
+            <img src="V:\vithya\campstore\bg2.png"class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal5" alt="ART" >
+            <div class="container"><h5>&emsp;&emsp;&emsp;Bag 2</h5>
+            <h6>Price:Rs-<s>659</s> <br><br>
+              Discount price:Rs-599<br><br>
+            Quantity: <input type="number" id="quantity6" name="quantity6" min="1" max="5">
+          </div></div></div>
+          <div class="col-lg bg-white"style="padding: 0"><div class="card">
+            <img src="V:\vithya\campstore\bg3.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal6"alt="ART" >
+            <div class="container"><h5>&emsp;&emsp;&emsp;Bag 3</h5>
+            <h6>Price:Rs-<s>600</s> <br><br>
+              Discount price:Rs-550<br><br>
+            Quantity: <input type="number" id="quantity7" name="quantity7" min="1" max="5">
+          </div></div></div>
+          <div class="col-lg bg-white"><div class="card">
+            <img src="V:\vithya\campstore\bg4.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal7"alt="ART" >
+            <div class="container"><h5>&emsp;&emsp;&emsp;Bag 4</h5>
+            <h6>Price:Rs-<s>999</s> <br><br>
+              Discount price:Rs-760<br><br>
+            Quantity: <input type="number" id="quantity8" name="quantity8" min="1" max="5">
+          </div>
+        </div></div>
+    </div><br><br><br><br>
+    
+        <div class="row">
+            <div class="col-lg bg-white"><div class="card">
+                <img src="V:\vithya\campstore\sh1.jpg"class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal8" alt="ART" >
+                <div class="container"><h5>&emsp;&emsp;&emsp;shoe 1</h5>
+                <h6>Price:Rs-<s>900</s> <br><br>
+                Discount price:Rs-850<br><br>
+                Quantity: <input type="number" id="quantity9" name="quantity9" min="1" max="5"></h6>
+              </div></div></div>
+              <div class="col-lg bg-white"><div class="card">
+                <img src="V:\vithya\campstore\sh2.jpg" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal9"alt="ART" >
+                <div class="container"><h5>&emsp;&emsp;&emsp;shoe 2</h5>
+                <h6>Price:Rs-<s>950</s> <br><br>
+                  Discount price:Rs-909<br><br>
+                Quantity: <input type="number" id="quantity10" name="quantity10" min="1" max="5">
+              </div></div></div>
+              <div class="col-lg bg-white"style="padding: 0"><div class="card">
+                <img src="V:\vithya\campstore\sh3.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal10"alt="ART" >
+                <div class="container">
+                    <h5>&emsp;&emsp;&emsp;shoe 3</h5>
+                <h6>Price:Rs-<s>959</s> <br><br>
+                  Discount price:Rs-889<br><br>
+                Quantity: <input type="number" id="quantity11" name="quantity11" min="1" max="5">
+              </div></div></div>
+              <div class="col-lg bg-white"><div class="card">
+                <img src="V:\vithya\campstore\sh4.jpg" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal11"alt="ART" >
+                <div class="container">
+                    <h5>&emsp;&emsp;&emsp;shoe 4</h5>
+                <h6>Price:Rs-<s>879</s> <br><br>
+                  Discount price:Rs-743<br><br>
+                Quantity: <input type="number" id="quantity12" name="quantity12" min="1" max="5">
+              </div></div>
+            </div>
+        </div><br><br><br>
+    
+        <div class="row">
+          <div class="col-lg bg-white"><div class="card">
+            <img src="V:\vithya\campstore\b1.png"class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal12" alt="ART" >
+            <div class="container">
+            <h5>&emsp;&emsp;&emsp;Water bottle 1</h5>
+            <h6>Price:Rs-<s>300</s> <br><br>
+              Discount price:Rs-250<br><br>
+            Quantity: <input type="number" id="quantity13" name="quantity13" min="1" max="5">
+          </div></div></div>
+          <div class="col-lg bg-white"><div class="card">
+            <img src="V:\vithya\campstore\b4.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal13"alt="ART" >
+            <div class="container">
+            <h5>&emsp;&emsp;&emsp;Water bottle 2</h5>
+            <h6>Price:Rs-<s>330</s> <br><br>
+              Discount price:Rs-250<br><br>
+            Quantity: <input type="number" id="quantity14" name="quantity14" min="1" max="5">
+          </div></div></div>
+          <div class="col-lg bg-white"style="padding: 0"><div class="card">
+            <img src="V:\vithya\campstore\b3.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal14"alt="ART" >
+            <div class="container">
+                <h5>&emsp;&emsp;&emsp;Water bottle 3</h5>
+            <h6>Price:Rs-<s>450</s> <br><br>
+              Discount price:Rs-389<br><br>
+            Quantity: <input type="number" id="quantity15" name="quantity15" min="1" max="5">
+          </div></div></div>
+          <div class="col-lg bg-white"><div class="card">
+            <img src="V:\vithya\campstore\b2.png" class="img-fluid" alt="Image" data-bs-toggle="modal" data-bs-target="#exampleModal15"alt="ART" >
+            <div class="container"><h5>&emsp;&emsp;&emsp;Water bottle 4</h5>
+            <h6>Price:Rs-<s>430</s> <br><br>
+              Discount price:Rs-250<br><br>
+            Quantity: <input type="number" id="quantity16" name="quantity16" min="1" max="5">
+          </div>
+        </div></div>
+    </div>
+
+     
+    <center>   <br><br>
+    
+        
+  <button type="submit"onclick="add()"style="height:45px;font-size:20px;background-color:pink;"><b>CALCULATE</b></button><br></div></center><br><br>
+  <center>
+  <div class="card" style="width: 18rem;background-color:sienna;color:white;">
+    <div class="card-body">
+      <p class="card-text">Amount</p>
+  <p id="pq"class="card-text"></p>
+  <p id="pq1"class="card-text"></p>
+  <p id="pq2"class="card-text"></p>
+  <p id="pq3"class="card-text"></p>
+  <p id="pq4"class="card-text"></p>
+  <p id="pq5"class="card-text"></p>
+  </div></div></center><br><br>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\black.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+   
+    </div><div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\s2.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\s3.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\s5.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\bg1.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\bg2.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\bg3.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\bg4.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\sh2.jpg" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\sh2.jpg" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\sh3.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\sh4.jpg" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\b1.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\b4.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\b3.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="V:\vithya\campstore\b2.png" class="img-fluid" alt="Image" style="max-width: 100%; max-height: 500px;">
+          </div>
+          
+        </div></div></div>     </div>
+      </div>
+   
+<script>
+  function add()
+  {
+    let num = document.querySelector('#quantity1');
+    let num2 = document.querySelector('#quantity2');
+    let num3 = document.querySelector('#quantity3');
+    let num4 = document.querySelector('#quantity4');
+	let val = num.value;
+  let val2 = num2.value;
+  let val3= num3.value;
+  let val4 = num4.value;
+	let c=val*250;
+  
+  let e=val2*150;
+  let f=val3*500;
+  let g=val4*375;
+  let t=c+e+f+g
+ document.getElementById("pq").innerHTML="shirt price:"+t
+ let num5 = document.querySelector('#quantity5');
+    let num6 = document.querySelector('#quantity6');
+    let num7 = document.querySelector('#quantity7');
+    let num8 = document.querySelector('#quantity8');
+	let val5 = num5.value;
+  let val6 = num6.value;
+  let val7 = num7.value;
+  let val8= num8.value;
+	let c1=val5*500;
+  let d1=val6*599;
+  let e1=val7*550;
+  let f1=val8*760;
+  let t1=c1+d1+e1+f1
+ document.getElementById("pq1").innerHTML="bag price:"+t1
+ let num9 = document.querySelector('#quantity9');
+ let num10 = document.querySelector('#quantity10');
+    let num11 = document.querySelector('#quantity11');
+    let num12 = document.querySelector('#quantity12');
+    let val9 = num9.value;
+	let val10 = num10.value;
+  let val11 = num11.value;
+  let val12 = num12.value;
+	let c2=val9*850;
+  let d2=val10*909;
+  let e2=val11*889;
+  let f2=val12*743;
+  let t2=c2+d2+e2+f2
+ document.getElementById("pq2").innerHTML="Shoe price:"+t2
+ let num13 = document.querySelector('#quantity13');
+    let num14= document.querySelector('#quantity14');
+ let num15 = document.querySelector('#quantity15');
+    let num16 = document.querySelector('#quantity16');
+  let val13= num13.value;
+  let val14 = num14.value;
+	let val15 = num15.value;
+  let val16 = num16.value;
+	let c3=val13*250;
+  let d3=val14*250;
+  let e3=val15*389;
+  let f3=val16*250;
+  let t3=c3+d3+e3+f3
+  let t4=t+t1+t2+t3
+  document.getElementById("pq3").innerHTML="Bottle price:"+t3
+  document.getElementById("pq4").innerHTML="total price:"+t4
+  if(t4>0){
+const node = document.createElement("button");
+
+const textnode = document.createTextNode("Place order");
+node.style.cssText='background-color:pink;font-size:medium;font-weight:bold';
+node.addEventListener('click',pro);
+node.appendChild(textnode);
+
+document.getElementById("pq5").appendChild(node);
+
+function pro(){
+  new swal("DONE", "Your order has been placed successfully", "success")
+  } 
+}
+  }  
+</script>
+</body>
+
+</html>
